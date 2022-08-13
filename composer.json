@@ -23,11 +23,12 @@
         "docs": "https://portphp.readthedocs.org"
     },
     "require": {
-        "php": ">=5.6.0",
-        "portphp/portphp": "^1.0.0",
+        "php": ">=7.4",
+        "portphp/portphp": "*@dev",
         "seld/signal-handler": "^1.0",
-        "symfony/property-access": "^2.3 || ^3.0 || ^4.0 || ^5.0",
-        "symfony/validator": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+        "psr/log": "^1 || ^2 || ^3",
+        "symfony/property-access": "^4.4 || ^5.4 || ^6.0",
+        "symfony/validator": "^4.4 || ^5.4 || ^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -41,6 +42,13 @@
         "phpspec/phpspec": "^2.2",
         "henrikbjorn/phpspec-code-coverage" : "^1.0"
     },
+    "repositories": {
+        "portphp": {
+            "type": "path",
+            "url": "//home/tac/survos/bundles/portphp-bundle"
+        }
+    },
+
     "suggest": {
         "symfony/property-access": "Used in MappingStep",
         "symfony/validator": "Used in ValidatorStep"
